@@ -13,11 +13,11 @@ extern "C" {
 #define uchar unsigned char    
 #define uint unsigned int 
 
-volatile unsigned char MC_Start_BZ @ 0x021 ;  //�����ʶ�Ĵ���
-volatile bit MC1_Start_BZ    @ ((unsigned)&MC_Start_BZ)*8+0;  /*MC1������־*/
-volatile bit MC2_Start_BZ    @ ((unsigned)&MC_Start_BZ)*8+1;  /*MC2������־*/
-volatile bit MC3_Start_BZ    @ ((unsigned)&MC_Start_BZ)*8+2;  /*MC3������־*/
-volatile bit MC4_Start_BZ    @ ((unsigned)&MC_Start_BZ)*8+3;  /*MC4������־*/
+volatile unsigned char MC_Start_BZ @ 0x021 ;  //定义标识寄存器
+volatile bit MC1_Start_BZ    @ ((unsigned)&MC_Start_BZ)*8+0;  /*MC1启动标志*/
+volatile bit MC2_Start_BZ    @ ((unsigned)&MC_Start_BZ)*8+1;  /*MC2启动标志*/
+volatile bit MC3_Start_BZ    @ ((unsigned)&MC_Start_BZ)*8+2;  /*MC3启动标志*/
+volatile bit MC4_Start_BZ    @ ((unsigned)&MC_Start_BZ)*8+3;  /*MC4启动标志*/
 volatile bit MC1_FZ_BZ    @ ((unsigned)&MC_Start_BZ)*8+4;  
 volatile bit MC2_FZ_BZ    @ ((unsigned)&MC_Start_BZ)*8+5;  
 volatile bit MC3_FZ_BZ    @ ((unsigned)&MC_Start_BZ)*8+6;  

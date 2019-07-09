@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include "Config.h"
 
-void putch(char data)  // #include <stdio.h> +  #include <stdlib.h> + void putch(char data)   ����printf()��rand()������
+void putch(char data)  // #include <stdio.h> +  #include <stdlib.h> + void putch(char data)   调用printf()，rand()函数。
 {
     while(!TXIF)
         continue;
@@ -16,8 +16,8 @@ void putch(char data)  // #include <stdio.h> +  #include <stdlib.h> + void putch
 }
 
 int main(int argc, char** argv) {
-IO_INT();     //IO��ʼ�� 
-UartInit();   //���ڳ�ʼ��
+IO_INT();     //IO初始化 
+UartInit();   //串口初始化
 tmr1_int(); 
  MC_Start_BZ=0x00;
  MC_IO_STATE=0x00;
@@ -37,8 +37,7 @@ tmr1_int();
 
 void interrupt  ISR()
 { 
-USART_RX(); //���ڽ����ж��ӳ���
-tmr1();  //TRM1�ӳ���1ms��ʱʱ�䵽��
-
+USART_RX(); //串口接收中断子程序
+tmr1();  //TRM1子程序（1ms定时时间到）
 }    
 

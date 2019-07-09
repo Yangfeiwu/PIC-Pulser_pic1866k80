@@ -3,6 +3,7 @@
  * Author: 杨飞武
  * Created on 20180808
  */
+ 
 #include <xc.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,12 +13,12 @@
 #include "IO_SWP.h"
 void tmr1_int()
 {
-     T1CON  =  0X02;                //ָ��ʱ�ӣ�Ԥ��Ƶ��Ϊ1:1
-     TMR1H  =  (65536-1560)/256;   //100uS��ʱ
+     T1CON  =  0X02;                //指令时钟，预分频比为1:1
+     TMR1H  =  (65536-1560)/256;   //100uS定时
      TMR1L  =  (65536-1560)%256;
      PMD1bits.TMR1MD  =  0;
-     T1CONbits.TMR1ON  =  1;        //�ر�������ʱ
-     PIE1bits.TMR1IE = 1;         //�ض�ʱ���ж�
+     T1CONbits.TMR1ON  =  1;        //关闭启动计时
+     PIE1bits.TMR1IE = 1;         //关定时器中断
      PIR1bits.TMR1IF = 0;
      
 }
@@ -26,8 +27,8 @@ void tmr1()
 {
 if(PIR1bits.TMR1IF ==1 &&  PIE1bits.TMR1IE ==1){    
         PIR1bits.TMR1IF =  0;
-        TMR1H  =  (65536-1560)/256;   //��ʱ100us
-        TMR1L  =  (65536-1560)%256;   //��ʱ100us 
+        TMR1H  =  (65536-1560)/256;   //定时100us
+        TMR1L  =  (65536-1560)%256;   //定时100us 
  MC1_SWP_Decision();
  MC2_SWP_Decision();
  MC3_SWP_Decision();

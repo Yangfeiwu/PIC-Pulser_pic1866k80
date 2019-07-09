@@ -14,13 +14,13 @@
 
 void MC_EVENT_Trigge()
 {
-/*��MC1����*/   
-     if(MC1_START_Signal==MC_START)   //��������
+/*对MC1操作*/   
+     if(MC1_START_Signal==MC_START)   //启动操作
      {  
              if(MC1_Start_BZ==TRUE) printf("MC1_working,ERROR!\r\n");      
              else{
-                             MC1_IO_STATE=0;           //IO״̬��0
-                             MC1_SwapDelay=10;          /*��һ�η�ת�ӳ���*/
+                             MC1_IO_STATE=0;           //IO状态置0
+                             MC1_SwapDelay=10;          /*第一次翻转延迟用*/
                              if(MC1_TIME_H==0)MC1_Start_BZ=FALSE;
                               else
                                {
@@ -44,13 +44,13 @@ void MC_EVENT_Trigge()
      
      
         
- /*��MC2����*/   
-     if(MC2_START_Signal==MC_START)   //��������
+ /*对MC2操作*/   
+     if(MC2_START_Signal==MC_START)   //启动操作
      {  
                                 if(MC2_Start_BZ==TRUE) printf("MC2_working,ERROR!\r\n");           
                                  else{  
-                                            MC2_IO_STATE=0;           //IO״̬��0
-                                            MC2_SwapDelay=10;          /*��һ�η�ת�ӳ���*/
+                                            MC2_IO_STATE=0;           //IO状态置0
+                                            MC2_SwapDelay=10;          /*第一次翻转延迟用*/
                                             if(MC2_TIME_H==0)MC2_Start_BZ=FALSE;
                                             else 
                                             {
@@ -73,13 +73,13 @@ void MC_EVENT_Trigge()
      }
      
      
-    /*��MC3����*/   
-     if(MC3_START_Signal==MC_START)   //��������
+    /*对MC3操作*/   
+     if(MC3_START_Signal==MC_START)   //启动操作
      {  
             if(MC3_Start_BZ==TRUE) printf("MC3_working,ERROR!\r\n");           
             else{     
-                          MC3_IO_STATE=0;           //IO״̬��0
-                          MC3_SwapDelay=10;          /*��һ�η�ת�ӳ���*/
+                          MC3_IO_STATE=0;           //IO状态置0
+                          MC3_SwapDelay=10;          /*第一次翻转延迟用*/
                           if(MC3_TIME_H==0)MC3_Start_BZ=FALSE;
                           else 
                           {
@@ -99,14 +99,14 @@ void MC_EVENT_Trigge()
   }   
      }
      
-     /*��MC4����*/   
-     if(MC4_START_Signal==MC_START)   //��������
+     /*对MC4操作*/   
+     if(MC4_START_Signal==MC_START)   //启动操作
        {  
                if(MC4_Start_BZ==TRUE) printf("MC4_working,ERROR!\r\n");           
                else{       
 
-                                MC4_IO_STATE=0;           //IO״̬��0
-                                MC4_SwapDelay=10;          /*��һ�η�ת�ӳ���*/
+                                MC4_IO_STATE=0;           //IO状态置0
+                                MC4_SwapDelay=10;          /*第一次翻转延迟用*/
                                 if(MC4_TIME_H==0)MC4_Start_BZ=FALSE;
                                 else
                                 {
