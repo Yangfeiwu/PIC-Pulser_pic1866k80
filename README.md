@@ -1,5 +1,8 @@
-# PIC-Pulser_pic1866k80
-基于PIC18F66K80多路可控脉冲输出，及IO控制的下位机程序
+
+ # PIC-Pulser_pic1866k80
+ * Author: 杨飞武
+ * Created on 20180808
+ * 基于PIC18F66K80多路可控脉冲输出，及IO控制的下位机程序
 # PIC18f66k80下位机程序目录结构
 ## 头文件：
 * Config.h
