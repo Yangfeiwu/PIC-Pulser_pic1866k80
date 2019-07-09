@@ -9,6 +9,8 @@
 #include <stdlib.h>
 #include "Config.h"
 #include "PORT_Filter_OUT.h"
+
+/**计算被MC占用的IO，脉冲结束释放相应IO*/
     void IOKZ_Filter(unsigned char RX,unsigned char PB_BIT,unsigned char PORTX_KZ)
     {
 

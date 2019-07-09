@@ -11,16 +11,16 @@
 void putch(char data)  // #include <stdio.h> +  #include <stdlib.h> + void putch(char data)   调用printf()，rand()函数。
 {
     while(!TXIF)
-        continue;
+    continue;
     TXREG=data;
 }
-
+/*程序入口 */
 int main(int argc, char** argv) {
 IO_INT();     //IO初始化 
 UartInit();   //串口初始化
-tmr1_int(); 
- MC_Start_BZ=0x00;
- MC_IO_STATE=0x00;
+tmr1_int();   //定时器1初始化
+ MC_Start_BZ=0x00;   //脉冲启动标志初始化为0
+ MC_IO_STATE=0x00;   //脉冲启动标志初始化为0
   while(TRUE)
   {
       if(RX_flag==Finish)Usart_CL();  //Usart rx finish

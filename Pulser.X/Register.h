@@ -24,23 +24,18 @@ volatile bit MC3_FZ_BZ    @ ((unsigned)&MC_Start_BZ)*8+6;
 volatile bit MC4_FZ_BZ    @ ((unsigned)&MC_Start_BZ)*8+7;
 
 
-volatile unsigned char MC_IO_STATE @ 0x022 ;        
-volatile bit MC1_IO_STATE    @ ((unsigned)&MC_IO_STATE)*8+0; 
-volatile bit MC2_IO_STATE    @ ((unsigned)&MC_IO_STATE)*8+1;
-volatile bit MC3_IO_STATE    @ ((unsigned)&MC_IO_STATE)*8+2; 
-volatile bit MC4_IO_STATE    @ ((unsigned)&MC_IO_STATE)*8+3;  
+volatile unsigned char MC_IO_STATE @ 0x022 ;  //定义标识寄存器       
+volatile bit MC1_IO_STATE    @ ((unsigned)&MC_IO_STATE)*8+0;  /* MC1当前IO状态(高低电平) */
+volatile bit MC2_IO_STATE    @ ((unsigned)&MC_IO_STATE)*8+1;  /* MC2当前IO状态(高低电平) */  
+volatile bit MC3_IO_STATE    @ ((unsigned)&MC_IO_STATE)*8+2;  /* MC3当前IO状态(高低电平) */  
+volatile bit MC4_IO_STATE    @ ((unsigned)&MC_IO_STATE)*8+3;  /* MC4当前IO状态(高低电平) */  
 volatile bit MC1_END_FLAT    @ ((unsigned)&MC_IO_STATE)*8+4;  
 volatile bit MC2_END_FLAT    @ ((unsigned)&MC_IO_STATE)*8+5; 
 volatile bit MC3_END_FLAT    @ ((unsigned)&MC_IO_STATE)*8+6;  
 volatile bit MC4_END_FLAT    @ ((unsigned)&MC_IO_STATE)*8+7; 
 
 
-
-
-
-
-
- uint ct = 0; 
+uint ct = 0;   /*定时器计数用 */
 
 #ifdef	__cplusplus
 }

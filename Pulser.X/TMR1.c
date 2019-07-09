@@ -11,6 +11,7 @@
 #include "Register.h"
 #include "Config.h"
 #include "IO_SWP.h"
+/**定时器1初始化 */
 void tmr1_int()
 {
      T1CON  =  0X02;                //指令时钟，预分频比为1:1
@@ -22,23 +23,23 @@ void tmr1_int()
      PIR1bits.TMR1IF = 0;
      
 }
-
+/**定时器1中断入口 */
 void tmr1()
 {
-if(PIR1bits.TMR1IF ==1 &&  PIE1bits.TMR1IE ==1){    
-        PIR1bits.TMR1IF =  0;
-        TMR1H  =  (65536-1560)/256;   //定时100us
-        TMR1L  =  (65536-1560)%256;   //定时100us 
- MC1_SWP_Decision();
- MC2_SWP_Decision();
- MC3_SWP_Decision();
- MC4_SWP_Decision();                  
-  if(ct++==2000)
-  {
-  ct=0;
-  LATF7=!LATF7;
-//     	TXREG1=0x88;
-  }
+  if(PIR1bits.TMR1IF ==1 &&  PIE1bits.TMR1IE ==1){    
+      PIR1bits.TMR1IF =  0;
+      TMR1H  =  (65536-1560)/256;   //定时100us
+      TMR1L  =  (65536-1560)%256;   //定时100us 
+      MC1_SWP_Decision();
+      MC2_SWP_Decision();
+      MC3_SWP_Decision();
+      MC4_SWP_Decision();                  
+        if(ct++==2000)  //定时时间到 
+        {
+        ct=0;
+        LATF7=!LATF7;
+      //     	TXREG1=0x88;
+        }
     }
 }
 

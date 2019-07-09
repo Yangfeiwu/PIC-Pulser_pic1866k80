@@ -14,7 +14,6 @@ extern "C" {
 void tmr1_int();
 void tmr1();
 
-
 #ifdef	__cplusplus
 }
 #endif

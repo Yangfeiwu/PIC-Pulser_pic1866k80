@@ -11,7 +11,7 @@
 extern "C" {
 #endif
 
-    
+/*pic18f66k80配置部分 */   
 
  // CONFIG1L
 #pragma config RETEN = OFF      // VREG Sleep Enable bit (Ultra low-power regulator is Disabled (Controlled by REGSLP bit))
@@ -76,7 +76,7 @@ extern "C" {
 // CONFIG7H
 #pragma config EBTRB = OFF      // Table Read Protect Boot (Disabled)
 
-    
+/*加载头文件 */    
 #include <xc.h>    
 #include "Register.h"
 #include "TMR1.h"
@@ -84,18 +84,16 @@ extern "C" {
 #include "IO_Int.h"
 #include "Pulser_param.h"   
 #include "IO_SWP.h"    
-#include "MC_EVENT.h"    
- #define TRUE 1   
- #define FALSE 0     
-    
- #define Finish 1   
- #define Free 0     
+#include "MC_EVENT.h" 
 
- #define MC_START 0X01   
- #define MC_STOP  0X02  
-    
- #define Wait 0     
-    
+/*一些声明 */   
+#define TRUE 1   
+#define FALSE 0       
+#define Finish 1   
+#define Free 0     
+#define MC_START 0X01    /**声明MC_START */
+#define MC_STOP  0X02    /**声明MC_STOP */     
+#define Wait 0       
 #define RC 0X0C
 #define RD 0X0D 
 #define RF 0X0F
