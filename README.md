@@ -29,7 +29,8 @@
 
 # 功能说明：
 * PORTC可做脉冲输出通道，在脉冲工作期间会失去对MC占用IO的控制(脉冲结束后释放控制权)
-
+* 24路IO控制。
+* 8路脉冲控制， 脉冲个数，宽度可调，控制精度0.1ms。
 # Labview上位机展示
 ![mahua](https://github.com/Yangfeiwu/PIC-Pulser_pic1866k80/blob/master/img/Labview%E4%B8%8A%E4%BD%8D%E6%9C%BA.png)
 # 通讯协议
