@@ -1,8 +1,7 @@
 /* 
  * File:   PORT_Filter_OUT.h
- * Author: Administrator
- *
- * Created on 2018Äê8ÔÂ8ÈÕ, ÏÂÎç3:50
+ * Author: æ¨é£æ­¦
+ * Created on 20180808
  */
 
 #ifndef PORT_FILTER_OUT_H

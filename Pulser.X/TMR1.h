@@ -1,8 +1,7 @@
 /* 
  * File:   TMR1.h
- * Author: Administrator
- *
- * Created on 2018?8?6?, ??8:50
+ * Author: 杨飞武
+ * Created on 20180808
  */
 
 #ifndef TMR1_H

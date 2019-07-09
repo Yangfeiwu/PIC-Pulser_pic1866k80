@@ -1,8 +1,7 @@
 /* 
  * File:   IO_SWP.h
- * Author: Administrator
- *
- * Created on 2018Äê8ÔÂ7ÈÕ, ÉÏÎç10:13
+ * Author: æ¨é£æ­¦
+ * Created on 20180808
  */
 
 #ifndef IO_SWP_H

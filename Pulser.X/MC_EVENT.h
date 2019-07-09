@@ -1,8 +1,7 @@
 /* 
  * File:   MC_EVENT.h
- * Author: Administrator
- *
- * Created on 2018Äê8ÔÂ7ÈÕ, ÏÂÎç12:58
+ * Author: æ¨é£æ­¦
+ * Created on 20180808
  */
 
 #ifndef MC_EVENT_H

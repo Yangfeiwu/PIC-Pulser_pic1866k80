@@ -1,4 +1,8 @@
-
+/* 
+ * File:   USART1.c
+ * Author: æ¨é£žæ­¦
+ * Created on 20180808
+ */
 #include <xc.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,24 +16,24 @@
 void UartInit(void)
 {
 TRISG=0xFF;
-RCSTA1bits.SPEN=1;// ´®¿ÚÊ¹ÄÜ
-// TXSTA1£º·¢ËÍ×´Ì¬ºÍ¿ØÖÆ¼Ä´æÆ÷
-TXSTA1bits.SYNC=0;// Òì²½Ä£Ê½
-TXSTA1bits.TX9=0;// Ñ¡Ôñ8 Î»·¢ËÍ
-TXSTA1bits.TXEN=1;// Ê¹ÄÜ·¢ËÍ
-TXSTA1bits.BRGH=1;// ¸ßËÙ²¨ÌØÂÊ
-TXSTA1bits.TXEN=1;// Ê¹ÄÜ·¢ËÍ
-// RCSTA1£º½ÓÊÕ×´Ì¬ºÍ¿ØÖÆ¼Ä´æÆ÷
-RCSTA1bits.RX9=0;// Ñ¡Ôñ8Î»½ÓÊÕ
-RCSTA1bits.CREN=1;// Ê¹ÄÜ½ÓÊÕÆ÷
-// BAUDCON1£º²¨ÌØÂÊ¿ØÖÆ¼Ä´æÆ÷
-BAUDCON1bits.BRG16=0;// 8Î»²¨ÌØÂÊ·¢ÉúÆ÷??SPBRGHx ºÍSPBRGx
+RCSTA1bits.SPEN=1;// ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½
+// TXSTA1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½Í¿ï¿½ï¿½Æ¼Ä´ï¿½ï¿½ï¿½
+TXSTA1bits.SYNC=0;// ï¿½ì²½Ä£Ê½
+TXSTA1bits.TX9=0;// Ñ¡ï¿½ï¿½8 Î»ï¿½ï¿½ï¿½ï¿½
+TXSTA1bits.TXEN=1;// Ê¹ï¿½Ü·ï¿½ï¿½ï¿½
+TXSTA1bits.BRGH=1;// ï¿½ï¿½ï¿½Ù²ï¿½ï¿½ï¿½ï¿½ï¿½
+TXSTA1bits.TXEN=1;// Ê¹ï¿½Ü·ï¿½ï¿½ï¿½
+// RCSTA1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½Í¿ï¿½ï¿½Æ¼Ä´ï¿½ï¿½ï¿½
+RCSTA1bits.RX9=0;// Ñ¡ï¿½ï¿½8Î»ï¿½ï¿½ï¿½ï¿½
+RCSTA1bits.CREN=1;// Ê¹ï¿½Ü½ï¿½ï¿½ï¿½ï¿½ï¿½
+// BAUDCON1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¿ï¿½ï¿½Æ¼Ä´ï¿½ï¿½ï¿½
+BAUDCON1bits.BRG16=0;// 8Î»ï¿½ï¿½ï¿½ï¿½ï¿½Ê·ï¿½ï¿½ï¿½ï¿½ï¿½??SPBRGHx ï¿½ï¿½SPBRGx
 SPBRG1=68;  //Set BRG 57600 (16MHZ crystal oscillator ,  BRG mode in High speed )
 INTCON=0;
-//ÖÐ¶ÏÅäÖÃ
-INTCONbits.GIE=1;      //Ê¹ÄÜÈ«¾ÖÖÐ¶Ï    
-INTCONbits.PEIE=1;     //Ê¹ÄÜÍâ²¿ÖÐ¶Ï      
-PIE1bits.RCIE=1;         //Ê¹ÄÜ½ÓÊÕÖÐ¶Ï   
+//ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½
+INTCONbits.GIE=1;      //Ê¹ï¿½ï¿½È«ï¿½ï¿½ï¿½Ð¶ï¿½    
+INTCONbits.PEIE=1;     //Ê¹ï¿½ï¿½ï¿½â²¿ï¿½Ð¶ï¿½      
+PIE1bits.RCIE=1;         //Ê¹ï¿½Ü½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½   
 
 }
 
@@ -37,37 +41,37 @@ PIE1bits.RCIE=1;         //Ê¹ÄÜ½ÓÊÕÖÐ¶Ï
     {
         RX_flag=Free;
 //     printf("Rx success!\r\n");
-  //----------½ÓÊÕÊý¾Ý·ÖÀà------------------   
+  //----------ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý·ï¿½ï¿½ï¿½------------------   
    Current_RX=RX[1];
    
  switch(Current_RX)
  {
 /*------------------------------------------------------------------*/     
-     case  0x01:   //MC1²ÎÊý½ÓÊÕ
+     case  0x01:   //MC1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
        for(int i=0; i<MC_PARM_SIZE;i++) MC1_PARM[i] =  RX[i];
         MC1_PARM_CL(); 
 //        printf("MC1_PARM Rx success!\r\n");
          break;
 /*------------------------------------------------------------------*/            
-      case  0x02: //MC2²ÎÊý½ÓÊÕ
+      case  0x02: //MC2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
        for(int i=0; i<MC_PARM_SIZE;i++) MC2_PARM[i] =  RX[i];
          MC2_PARM_CL();
 //        printf("MC2_PARM Rx success!\r\n");
          break;     
 /*------------------------------------------------------------------*/           
-      case  0x03:  //MC3²ÎÊý½ÓÊÕ
+      case  0x03:  //MC3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
        for(int i=0; i<MC_PARM_SIZE;i++) MC3_PARM[i] =  RX[i];
          MC3_PARM_CL();       
 //        printf("MC3_PARM Rx success!\r\n");
          break;         
  /*------------------------------------------------------------------*/          
-        case  0x04:  //MC4²ÎÊý½ÓÊÕ          
+        case  0x04:  //MC4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½          
        for(int i=0; i<MC_PARM_SIZE;i++) MC4_PARM[i] =  RX[i];
          MC4_PARM_CL();       
 //        printf("MC4_PARM Rx success!\r\n");
          break;       
 /*------------------------------------------------------------------*/           
-         case  0x11:  //MCÆô¶¯²ÎÊý½ÓÊÕ
+         case  0x11:  //MCï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
        for(int i=0; i<MC_START_PARM_SIZE;i++) McStart_PARM[i] =  RX[i];
         McStart_PARM_CL();
         MC_EVENT_Trigge();
@@ -76,7 +80,7 @@ PIE1bits.RCIE=1;         //Ê¹ÄÜ½ÓÊÕÖÐ¶Ï
          
          
  /*------------------------------------------------------------------*/          
-         case  0x31: //IO¿ØÖÆ²ÎÊý½ÓÊÕ
+         case  0x31: //IOï¿½ï¿½ï¿½Æ²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
        for(int i=0; i<IOKZ_PARM_SIZE;i++) RX_IO_PARM[i] =  RX[i];
         RX_IOKZ_PARM();
 //        printf("IOKZ_PARM Rx success!\r\n");
@@ -94,16 +98,16 @@ PIE1bits.RCIE=1;         //Ê¹ÄÜ½ÓÊÕÖÐ¶Ï
 void USART_RX()
 {
  //   unsigned char data;
-    if(RC1IE&&RC1IF)            //ÅÐ¶ÏÊÇ·ñÎª´®¿Ú½ÓÊÕÖÐ¶Ï    
+    if(RC1IE&&RC1IF)            //ï¿½Ð¶ï¿½ï¿½Ç·ï¿½Îªï¿½ï¿½ï¿½Ú½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½    
     {  
       
  //         data=RCREG1;
-           RX[RX_C++]= RCREG1;    //½ÓÊÕÊý¾Ý   
+           RX[RX_C++]= RCREG1;    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   
     //       	TXREG1=data;
 
        if(RX[0]!=0XD0)RX_C=0;  
          
-           if(RX_C>=RX_SIZE)//Êý¾Ý½ÓÊÕÍê³É
+           if(RX_C>=RX_SIZE)//ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             {   
                 RX_C=0; 
                 RX_flag=Finish;

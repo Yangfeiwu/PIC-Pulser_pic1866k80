@@ -1,8 +1,7 @@
 /* 
  * File:   Config.h
- * Author: Administrator
- *
- * Created on 2018Äê8ÔÂ6ÈÕ, ÉÏÎç8:57
+ * Author: æ¨é£æ­¦
+ * Created on 20180808
  */
 
 #ifndef CONFIG_H

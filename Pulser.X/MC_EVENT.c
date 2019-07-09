@@ -1,8 +1,7 @@
 /*
  * File:   MC_EVENT.c
- * Author: Administrator
- *
- * Created on 2018дЙ8тб7ху, обнГ12:58
+ * Author: Ф²╗Иё·Ф╜╕
+ * Created on 20180808
  */
 
 #include <xc.h>
@@ -15,13 +14,13 @@
 
 void MC_EVENT_Trigge()
 {
-/*╤тMC1╡ывВ*/   
-     if(MC1_START_Signal==MC_START)   //фТ╤╞╡ывВ
+/*О©╫О©╫MC1О©╫О©╫О©╫О©╫*/   
+     if(MC1_START_Signal==MC_START)   //О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
      {  
              if(MC1_Start_BZ==TRUE) printf("MC1_working,ERROR!\r\n");      
              else{
-                             MC1_IO_STATE=0;           //IOв╢л╛жц0
-                             MC1_SwapDelay=10;          /*╣зр╩╢н╥╜в╙ясЁысц*/
+                             MC1_IO_STATE=0;           //IOв╢л╛О©╫О©╫0
+                             MC1_SwapDelay=10;          /*О©╫О©╫р╩О©╫н╥О©╫в╙О©╫сЁО©╫О©╫О©╫*/
                              if(MC1_TIME_H==0)MC1_Start_BZ=FALSE;
                               else
                                {
@@ -45,13 +44,13 @@ void MC_EVENT_Trigge()
      
      
         
- /*╤тMC2╡ывВ*/   
-     if(MC2_START_Signal==MC_START)   //фТ╤╞╡ывВ
+ /*О©╫О©╫MC2О©╫О©╫О©╫О©╫*/   
+     if(MC2_START_Signal==MC_START)   //О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
      {  
                                 if(MC2_Start_BZ==TRUE) printf("MC2_working,ERROR!\r\n");           
                                  else{  
-                                            MC2_IO_STATE=0;           //IOв╢л╛жц0
-                                            MC2_SwapDelay=10;          /*╣зр╩╢н╥╜в╙ясЁысц*/
+                                            MC2_IO_STATE=0;           //IOв╢л╛О©╫О©╫0
+                                            MC2_SwapDelay=10;          /*О©╫О©╫р╩О©╫н╥О©╫в╙О©╫сЁО©╫О©╫О©╫*/
                                             if(MC2_TIME_H==0)MC2_Start_BZ=FALSE;
                                             else 
                                             {
@@ -74,13 +73,13 @@ void MC_EVENT_Trigge()
      }
      
      
-    /*╤тMC3╡ывВ*/   
-     if(MC3_START_Signal==MC_START)   //фТ╤╞╡ывВ
+    /*О©╫О©╫MC3О©╫О©╫О©╫О©╫*/   
+     if(MC3_START_Signal==MC_START)   //О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
      {  
             if(MC3_Start_BZ==TRUE) printf("MC3_working,ERROR!\r\n");           
             else{     
-                          MC3_IO_STATE=0;           //IOв╢л╛жц0
-                          MC3_SwapDelay=10;          /*╣зр╩╢н╥╜в╙ясЁысц*/
+                          MC3_IO_STATE=0;           //IOв╢л╛О©╫О©╫0
+                          MC3_SwapDelay=10;          /*О©╫О©╫р╩О©╫н╥О©╫в╙О©╫сЁО©╫О©╫О©╫*/
                           if(MC3_TIME_H==0)MC3_Start_BZ=FALSE;
                           else 
                           {
@@ -100,14 +99,14 @@ void MC_EVENT_Trigge()
   }   
      }
      
-     /*╤тMC4╡ывВ*/   
-     if(MC4_START_Signal==MC_START)   //фТ╤╞╡ывВ
+     /*О©╫О©╫MC4О©╫О©╫О©╫О©╫*/   
+     if(MC4_START_Signal==MC_START)   //О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫
        {  
                if(MC4_Start_BZ==TRUE) printf("MC4_working,ERROR!\r\n");           
                else{       
 
-                                MC4_IO_STATE=0;           //IOв╢л╛жц0
-                                MC4_SwapDelay=10;          /*╣зр╩╢н╥╜в╙ясЁысц*/
+                                MC4_IO_STATE=0;           //IOв╢л╛О©╫О©╫0
+                                MC4_SwapDelay=10;          /*О©╫О©╫р╩О©╫н╥О©╫в╙О©╫сЁО©╫О©╫О©╫*/
                                 if(MC4_TIME_H==0)MC4_Start_BZ=FALSE;
                                 else
                                 {

@@ -1,8 +1,7 @@
 /* 
  * File:   TMR1.c
- * Author: Administrator
- *
- * Created on 2018?8?6?, ??8:48
+ * Author: Êù®È£ûÊ≠¶
+ * Created on 20180808
  */
 #include <xc.h>
 #include <stdio.h>
@@ -13,12 +12,12 @@
 #include "IO_SWP.h"
 void tmr1_int()
 {
-     T1CON  =  0X02;                //÷∏¡Ó ±÷”£¨‘§∑÷∆µ±»Œ™1:1
-     TMR1H  =  (65536-1560)/256;   //100uS∂® ±
+     T1CON  =  0X02;                //÷∏ÔøΩÔøΩ ±ÔøΩ”£ÔøΩ‘§ÔøΩÔøΩ∆µÔøΩÔøΩŒ™1:1
+     TMR1H  =  (65536-1560)/256;   //100uSÔøΩÔøΩ ±
      TMR1L  =  (65536-1560)%256;
      PMD1bits.TMR1MD  =  0;
-     T1CONbits.TMR1ON  =  1;        //πÿ±’∆Ù∂Øº∆ ±
-     PIE1bits.TMR1IE = 1;         //πÿ∂® ±∆˜÷–∂œ
+     T1CONbits.TMR1ON  =  1;        //ÔøΩÿ±ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ ±
+     PIE1bits.TMR1IE = 1;         //ÔøΩÿ∂ÔøΩ ±ÔøΩÔøΩÔøΩ–∂ÔøΩ
      PIR1bits.TMR1IF = 0;
      
 }
@@ -27,8 +26,8 @@ void tmr1()
 {
 if(PIR1bits.TMR1IF ==1 &&  PIE1bits.TMR1IE ==1){    
         PIR1bits.TMR1IF =  0;
-        TMR1H  =  (65536-1560)/256;   //∂® ±100us
-        TMR1L  =  (65536-1560)%256;   //∂® ±100us 
+        TMR1H  =  (65536-1560)/256;   //ÔøΩÔøΩ ±100us
+        TMR1L  =  (65536-1560)%256;   //ÔøΩÔøΩ ±100us 
  MC1_SWP_Decision();
  MC2_SWP_Decision();
  MC3_SWP_Decision();

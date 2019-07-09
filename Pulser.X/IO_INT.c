@@ -1,8 +1,7 @@
 /*
  * File:   IO_INT.c
- * Author: Administrator
- *
- * Created on 2017Äê9ÔÂ1ÈÕ, ÏÂÎç4:21
+ * Author: æ¨é£žæ­¦
+ * Created on 20180808
  */
 
 
@@ -10,25 +9,25 @@
 #include "IO_Int.h"
 void IO_INT()
 {
- /*--------------------C¿ÚÅäÖÃ----------------------*/   
+ /*--------------------Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½----------------------*/   
     
-PORTC=0X00;   //ÇåRC
+PORTC=0X00;   //ï¿½ï¿½RC
 LATC=0X00;
-TRISC=0x00;    //ÅäÖÃRC¿ÚÈ«ÎªÊä³ö¿Ú
-//LATC=0xff;       //RCÖÃ1µãÁÁ  V_LED
+TRISC=0x00;    //ï¿½ï¿½ï¿½ï¿½RCï¿½ï¿½È«Îªï¿½ï¿½ï¿½ï¿½ï¿½
+//LATC=0xff;       //RCï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½  V_LED
 
- /*--------------------D¿ÚÅäÖÃ----------------------*/   
+ /*--------------------Dï¿½ï¿½ï¿½ï¿½ï¿½ï¿½----------------------*/   
 
-PORTD=0X00;   //ÇåRC
+PORTD=0X00;   //ï¿½ï¿½RC
 LATD=0X00;
-TRISD=0x00;    //ÅäÖÃRC¿ÚÈ«ÎªÊä³ö¿Ú
-//LATD=0xff;       //RCÖÃ1µãÁÁ  V_LED
+TRISD=0x00;    //ï¿½ï¿½ï¿½ï¿½RCï¿½ï¿½È«Îªï¿½ï¿½ï¿½ï¿½ï¿½
+//LATD=0xff;       //RCï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½  V_LED
 
-/*--------------------F¿ÚÅäÖÃ----------------------*/   
+/*--------------------Fï¿½ï¿½ï¿½ï¿½ï¿½ï¿½----------------------*/   
 
-PORTF=0X00;   //ÇåRC
+PORTF=0X00;   //ï¿½ï¿½RC
 LATF=0X00;
-TRISF=0x00;    //ÅäÖÃRC¿ÚÈ«ÎªÊä³ö¿Ú
-//LATF=0xff;       //RCÖÃ1µãÁÁ  V_LED
+TRISF=0x00;    //ï¿½ï¿½ï¿½ï¿½RCï¿½ï¿½È«Îªï¿½ï¿½ï¿½ï¿½ï¿½
+//LATF=0xff;       //RCï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½  V_LED
 
 }

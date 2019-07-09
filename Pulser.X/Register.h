@@ -1,8 +1,7 @@
 /* 
  * File:   Register.h
- * Author: Administrator
- *
- * Created on 2018Äê8ÔÂ6ÈÕ, ÉÏÎç9:15
+ * Author: æ¨é£æ­¦
+ * Created on 20180808
  */
 
 #ifndef REGISTER_H
@@ -14,11 +13,11 @@ extern "C" {
 #define uchar unsigned char    
 #define uint unsigned int 
 
-volatile unsigned char MC_Start_BZ @ 0x021 ;  //¶¨Òå±êÊ¶¼Ä´æÆ÷
-volatile bit MC1_Start_BZ    @ ((unsigned)&MC_Start_BZ)*8+0;  /*MC1Æô¶¯±êÖ¾*/
-volatile bit MC2_Start_BZ    @ ((unsigned)&MC_Start_BZ)*8+1;  /*MC2Æô¶¯±êÖ¾*/
-volatile bit MC3_Start_BZ    @ ((unsigned)&MC_Start_BZ)*8+2;  /*MC3Æô¶¯±êÖ¾*/
-volatile bit MC4_Start_BZ    @ ((unsigned)&MC_Start_BZ)*8+3;  /*MC4Æô¶¯±êÖ¾*/
+volatile unsigned char MC_Start_BZ @ 0x021 ;  //ï¿½ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½Ä´ï¿½ï¿½ï¿½
+volatile bit MC1_Start_BZ    @ ((unsigned)&MC_Start_BZ)*8+0;  /*MC1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾*/
+volatile bit MC2_Start_BZ    @ ((unsigned)&MC_Start_BZ)*8+1;  /*MC2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾*/
+volatile bit MC3_Start_BZ    @ ((unsigned)&MC_Start_BZ)*8+2;  /*MC3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾*/
+volatile bit MC4_Start_BZ    @ ((unsigned)&MC_Start_BZ)*8+3;  /*MC4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾*/
 volatile bit MC1_FZ_BZ    @ ((unsigned)&MC_Start_BZ)*8+4;  
 volatile bit MC2_FZ_BZ    @ ((unsigned)&MC_Start_BZ)*8+5;  
 volatile bit MC3_FZ_BZ    @ ((unsigned)&MC_Start_BZ)*8+6;  

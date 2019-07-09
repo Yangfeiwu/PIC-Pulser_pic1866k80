@@ -1,8 +1,7 @@
 /* 
  * File:   Pulser_param.h
- * Author: Administrator
- *
- * Created on 2018Äê8ÔÂ6ÈÕ, ÏÂÎç3:36
+ * Author: æ¨é£æ­¦
+ * Created on 20180808
  */
 
 #ifndef PULSER_PARAM_H
@@ -13,32 +12,32 @@ extern "C" {
 #endif
 #define uchar unsigned char    
 #define uint unsigned int     
-#define RX_MC1_PARM 0X01;   //½ÓÊÕÂö³å1²ÎÊı
-#define RX_MC2_PARM 0X02;   //½ÓÊÕÂö³å1²ÎÊı
-#define RX_MC3_PARM 0X03;   //½ÓÊÕÂö³å1²ÎÊı
-#define RX_MC4_PARM 0X04;   //½ÓÊÕÂö³å1²ÎÊı    
-#define MC_START_PARM 0X11; //½ÓÊÕÂö³åÆô¶¯²ÎÊı    
-#define RX_IOKZ 0X31;   //½ÓÊÕIO¿ØÖÆ²ÎÊı
+#define RX_MC1_PARM 0X01;   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½
+#define RX_MC2_PARM 0X02;   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½
+#define RX_MC3_PARM 0X03;   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½
+#define RX_MC4_PARM 0X04;   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½    
+#define MC_START_PARM 0X11; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½    
+#define RX_IOKZ 0X31;   //ï¿½ï¿½ï¿½ï¿½IOï¿½ï¿½ï¿½Æ²ï¿½ï¿½ï¿½
 
 
     
 #define MC_PARM_SIZE 8
 #define MC_START_PARM_SIZE    6
 #define IOKZ_PARM_SIZE    5
-#define MC_Channel_NUM 4      //Âö³åÍ¨µÀÊıÁ¿(ÏµÍ³ÏŞ¶¨)
+#define MC_Channel_NUM 4      //ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ÏµÍ³ï¿½Ş¶ï¿½)
     
- uchar Current_RX=0;  //µ±Ç°Ö¸¶¨½ÓÊÜÏî
- uchar MC1_START_Signal=0,MC2_START_Signal=0, MC3_START_Signal=0,MC4_START_Signal=0;    //Âö³åÆô¶¯ĞÅºÅ
+ uchar Current_RX=0;  //ï¿½ï¿½Ç°Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ uchar MC1_START_Signal=0,MC2_START_Signal=0, MC3_START_Signal=0,MC4_START_Signal=0;    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿½
  
  
-     uchar    MC1_PARM[MC_PARM_SIZE]={0}, MC2_PARM[MC_PARM_SIZE]={0}, MC3_PARM[MC_PARM_SIZE]={0}, MC4_PARM[MC_PARM_SIZE]={0};  //MC²ÎÊı½ÓÊÕ´æ´¢»º´æ
-     uchar    McStart_PARM[MC_START_PARM_SIZE]={0};  //MCÆô¶¯²ÎÊı½ÓÊÕ´æ´¢»º´æ
-     uchar    RX_IO_PARM[IOKZ_PARM_SIZE]={0};     //IO²ÎÊı½ÓÊÕ´æ´¢»º´æ
-     uchar    MC_Channel_IO_PARM[MC_Channel_NUM]={0};  //Âö³åIO´æ´¢
-     uchar    MC1_FZ_C=0,MC2_FZ_C=0,MC3_FZ_C=0,MC4_FZ_C=0;  //Âö³å´ÎÊı
-     uchar    MC1_Channel=1,MC2_Channel=2,MC3_Channel=4,MC4_Channel=8;  //Âö³åÍ¨µÀÑ¡Ôñ(Ä¬ÈÏ1234Í¨µÀ¶ÔÓ¦ LATC0 LATC1 LATC2 LATC3)
-     uint     MC1_TIME_H=0,MC2_TIME_H=0,MC3_TIME_H=0,MC4_TIME_H=0;  //Âö³å¸ßµçÆ½Ê±¼ä
-     uint     MC1_TIME_L=0,MC2_TIME_L=0,MC3_TIME_L=0,MC4_TIME_L=0; //Âö³åµÍµçÆ½Ê±¼ä
+     uchar    MC1_PARM[MC_PARM_SIZE]={0}, MC2_PARM[MC_PARM_SIZE]={0}, MC3_PARM[MC_PARM_SIZE]={0}, MC4_PARM[MC_PARM_SIZE]={0};  //MCï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ´æ´¢ï¿½ï¿½ï¿½ï¿½
+     uchar    McStart_PARM[MC_START_PARM_SIZE]={0};  //MCï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ´æ´¢ï¿½ï¿½ï¿½ï¿½
+     uchar    RX_IO_PARM[IOKZ_PARM_SIZE]={0};     //IOï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ´æ´¢ï¿½ï¿½ï¿½ï¿½
+     uchar    MC_Channel_IO_PARM[MC_Channel_NUM]={0};  //ï¿½ï¿½ï¿½ï¿½IOï¿½æ´¢
+     uchar    MC1_FZ_C=0,MC2_FZ_C=0,MC3_FZ_C=0,MC4_FZ_C=0;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     uchar    MC1_Channel=1,MC2_Channel=2,MC3_Channel=4,MC4_Channel=8;  //ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½Ñ¡ï¿½ï¿½(Ä¬ï¿½ï¿½1234Í¨ï¿½ï¿½ï¿½ï¿½Ó¦ LATC0 LATC1 LATC2 LATC3)
+     uint     MC1_TIME_H=0,MC2_TIME_H=0,MC3_TIME_H=0,MC4_TIME_H=0;  //ï¿½ï¿½ï¿½ï¿½ßµï¿½Æ½Ê±ï¿½ï¿½
+     uint     MC1_TIME_L=0,MC2_TIME_L=0,MC3_TIME_L=0,MC4_TIME_L=0; //ï¿½ï¿½ï¿½ï¿½Íµï¿½Æ½Ê±ï¿½ï¿½
  
      uint     MC1_SwapDelay=0,MC2_SwapDelay=0,MC3_SwapDelay=0,MC4_SwapDelay=0;
 

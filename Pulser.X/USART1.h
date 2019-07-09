@@ -1,8 +1,7 @@
 /* 
  * File:   USART1.h
- * Author: Administrator
- *
- * Created on 2018Äê8ÔÂ6ÈÕ, ÉÏÎç9:03
+ * Author: æ¨é£æ­¦
+ * Created on 20180808
  */
 
 #ifndef USART1_H
@@ -13,12 +12,12 @@ extern "C" {
 #endif
 #define RX_SIZE 8   
 
-    bit RX_flag ;   //½ÓÊÕ±êÖ¾¡¾RX_flag=1£¬Êı¾İ½ÓÊÕÍê³É ¡¿
-    unsigned char RX[RX_SIZE];  //Usart1½ÓÊÕ»º´æÇø
-    unsigned char RX_C=0;//´®¿Ú½ÓÊÕ¼ÆÊı
+    bit RX_flag ;   //ï¿½ï¿½ï¿½Õ±ï¿½Ö¾ï¿½ï¿½RX_flag=1ï¿½ï¿½ï¿½ï¿½ï¿½İ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
+    unsigned char RX[RX_SIZE];  //Usart1ï¿½ï¿½ï¿½Õ»ï¿½ï¿½ï¿½ï¿½ï¿½
+    unsigned char RX_C=0;//ï¿½ï¿½ï¿½Ú½ï¿½ï¿½Õ¼ï¿½ï¿½ï¿½
     void UartInit();
-    void USART_RX();    //´®¿Ú½ÓÊÕ×Ó³ÌĞò
-    void Usart_CL();                 //´®¿Ú½ÓÊÕÍê³É´¦Àí×Ó³ÌĞò
+    void USART_RX();    //ï¿½ï¿½ï¿½Ú½ï¿½ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½
+    void Usart_CL();                 //ï¿½ï¿½ï¿½Ú½ï¿½ï¿½ï¿½ï¿½ï¿½É´ï¿½ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½
 
    
 #ifdef	__cplusplus

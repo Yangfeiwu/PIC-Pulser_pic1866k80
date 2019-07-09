@@ -1,7 +1,6 @@
 /* 
- * File:   main.c
- * Author: Administrator
- *
+ * File: main.c
+ * Author: æ¨é£æ­¦
  * Created on 20180808
  */
 
@@ -9,7 +8,7 @@
 #include <stdlib.h>
 #include "Config.h"
 
-void putch(char data)  // #include <stdio.h> +  #include <stdlib.h> + void putch(char data)   µ÷ÓÃprintf()£¬rand()º¯Êı¡£
+void putch(char data)  // #include <stdio.h> +  #include <stdlib.h> + void putch(char data)   ï¿½ï¿½ï¿½ï¿½printf()ï¿½ï¿½rand()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 {
     while(!TXIF)
         continue;
@@ -17,8 +16,8 @@ void putch(char data)  // #include <stdio.h> +  #include <stdlib.h> + void putch
 }
 
 int main(int argc, char** argv) {
-IO_INT();     //IO³õÊ¼»¯ 
-UartInit();   //´®¿Ú³õÊ¼»¯
+IO_INT();     //IOï¿½ï¿½Ê¼ï¿½ï¿½ 
+UartInit();   //ï¿½ï¿½ï¿½Ú³ï¿½Ê¼ï¿½ï¿½
 tmr1_int(); 
  MC_Start_BZ=0x00;
  MC_IO_STATE=0x00;
@@ -38,8 +37,8 @@ tmr1_int();
 
 void interrupt  ISR()
 { 
-USART_RX(); //´®¿Ú½ÓÊÕÖĞ¶Ï×Ó³ÌĞò
-tmr1();  //TRM1×Ó³ÌĞò£¨1ms¶¨Ê±Ê±¼äµ½£©
+USART_RX(); //ï¿½ï¿½ï¿½Ú½ï¿½ï¿½ï¿½ï¿½Ğ¶ï¿½ï¿½Ó³ï¿½ï¿½ï¿½
+tmr1();  //TRM1ï¿½Ó³ï¿½ï¿½ï¿½1msï¿½ï¿½Ê±Ê±ï¿½äµ½ï¿½ï¿½
 
 }    
 

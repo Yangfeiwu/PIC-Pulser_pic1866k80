@@ -1,8 +1,7 @@
 /*
  * File:   PARM_CL.c
- * Author: Administrator
- *
- * Created on 2018Äê8ÔÂ8ÈÕ, ÏÂÎç3:43
+ * Author: æ¨é£æ­¦
+ * Created on 20180808
  */
 
 
@@ -23,10 +22,10 @@
     if( MC1_Start_BZ==FALSE)
     {
     
-     MC1_Channel= MC1_PARM[2];  //Âö³å1Í¨µÀÅäÖÃ
-     MC1_FZ_C= MC1_PARM[3];    //Âö³å´ÎÊı
-     MC1_TIME_H =   MC1_PARM[4]*255+MC1_PARM[5];  //Âö³å¸ßµçÆ½Ê±¼ä
-     MC1_TIME_L =   MC1_PARM[6]*255+MC1_PARM[7]; //Âö³åµÍµçÆ½Ê±¼ä
+     MC1_Channel= MC1_PARM[2];  //ï¿½ï¿½ï¿½ï¿½1Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     MC1_FZ_C= MC1_PARM[3];    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     MC1_TIME_H =   MC1_PARM[4]*255+MC1_PARM[5];  //ï¿½ï¿½ï¿½ï¿½ßµï¿½Æ½Ê±ï¿½ï¿½
+     MC1_TIME_L =   MC1_PARM[6]*255+MC1_PARM[7]; //ï¿½ï¿½ï¿½ï¿½Íµï¿½Æ½Ê±ï¿½ï¿½
        //printf("MC1_PARM Write success!\r\n"); 
      
     } 
@@ -37,10 +36,10 @@
     {
    if( MC2_Start_BZ==FALSE)    
    {       
-     MC2_Channel= MC2_PARM[2];  //Âö³å1Í¨µÀÅäÖÃ
-     MC2_FZ_C= MC2_PARM[3];    //Âö³å´ÎÊı
-     MC2_TIME_H =   MC2_PARM[4]*255+MC2_PARM[5];  //Âö³å¸ßµçÆ½Ê±¼ä
-     MC2_TIME_L =   MC2_PARM[6]*255+MC2_PARM[7]; //Âö³åµÍµçÆ½Ê±¼ä 
+     MC2_Channel= MC2_PARM[2];  //ï¿½ï¿½ï¿½ï¿½1Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     MC2_FZ_C= MC2_PARM[3];    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     MC2_TIME_H =   MC2_PARM[4]*255+MC2_PARM[5];  //ï¿½ï¿½ï¿½ï¿½ßµï¿½Æ½Ê±ï¿½ï¿½
+     MC2_TIME_L =   MC2_PARM[6]*255+MC2_PARM[7]; //ï¿½ï¿½ï¿½ï¿½Íµï¿½Æ½Ê±ï¿½ï¿½ 
           //    printf("MC2_PARM Write success!\r\n"); 
    }
    else printf("MC2_PARM Write Fail!\r\n"); 
@@ -51,10 +50,10 @@
     {
     if( MC3_Start_BZ==FALSE)  
     {    
-     MC3_Channel= MC3_PARM[2];  //Âö³å1Í¨µÀÅäÖÃ
-     MC3_FZ_C= MC3_PARM[3];    //Âö³å´ÎÊı
-     MC3_TIME_H =   MC3_PARM[4]*255+MC3_PARM[5];  //Âö³å¸ßµçÆ½Ê±¼ä
-     MC3_TIME_L =   MC3_PARM[6]*255+MC3_PARM[7]; //Âö³åµÍµçÆ½Ê±¼ä  
+     MC3_Channel= MC3_PARM[2];  //ï¿½ï¿½ï¿½ï¿½1Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     MC3_FZ_C= MC3_PARM[3];    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     MC3_TIME_H =   MC3_PARM[4]*255+MC3_PARM[5];  //ï¿½ï¿½ï¿½ï¿½ßµï¿½Æ½Ê±ï¿½ï¿½
+     MC3_TIME_L =   MC3_PARM[6]*255+MC3_PARM[7]; //ï¿½ï¿½ï¿½ï¿½Íµï¿½Æ½Ê±ï¿½ï¿½  
      //  printf("MC3_PARM Write success!\r\n"); 
     }
     else  printf("MC3_PARM Write Fail!\r\n"); 
@@ -65,10 +64,10 @@
     {
      if( MC4_Start_BZ==FALSE)  
      {        
-     MC4_Channel= MC4_PARM[2];  //Âö³å1Í¨µÀÅäÖÃ
-     MC4_FZ_C= MC4_PARM[3];    //Âö³å´ÎÊı
-     MC4_TIME_H =   MC4_PARM[4]*255+MC4_PARM[5];  //Âö³å¸ßµçÆ½Ê±¼ä
-     MC4_TIME_L =   MC4_PARM[6]*255+MC4_PARM[7]; //Âö³åµÍµçÆ½Ê±¼ä    
+     MC4_Channel= MC4_PARM[2];  //ï¿½ï¿½ï¿½ï¿½1Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     MC4_FZ_C= MC4_PARM[3];    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     MC4_TIME_H =   MC4_PARM[4]*255+MC4_PARM[5];  //ï¿½ï¿½ï¿½ï¿½ßµï¿½Æ½Ê±ï¿½ï¿½
+     MC4_TIME_L =   MC4_PARM[6]*255+MC4_PARM[7]; //ï¿½ï¿½ï¿½ï¿½Íµï¿½Æ½Ê±ï¿½ï¿½    
      //  printf("MC4_PARM Write success!\r\n"); 
      }
      else    printf("MC4_PARM Write Fail!\r\n"); 
@@ -93,102 +92,102 @@
    void RX_IOKZ_PARM()
    {
        
-    /*ÅĞ¶Ïµ±Ç°MCÖ´ĞĞµÄÒı½Å£¬Ö´ĞĞÖĞ½ûÖ¹¶ÔMCÕ¼ÓÃIO¿ØÖÆ*/   
+    /*ï¿½Ğ¶Ïµï¿½Ç°MCÖ´ï¿½Ğµï¿½ï¿½ï¿½ï¿½Å£ï¿½Ö´ï¿½ï¿½ï¿½Ğ½ï¿½Ö¹ï¿½ï¿½MCÕ¼ï¿½ï¿½IOï¿½ï¿½ï¿½ï¿½*/   
       uchar MC_Occupy_Channel,RC_PB_BIT;
       MC_Occupy_Channel=MC_Start_BZ & 0x0F;
-        /*MCÕ¼ÓÃIO¼ÆËã*/
+        /*MCÕ¼ï¿½ï¿½IOï¿½ï¿½ï¿½ï¿½*/
      switch (MC_Occupy_Channel)
      {
-         case  0x00: //ÎŞÍ¨µÀ±»Õ¼ÓÃ  
+         case  0x00: //ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½Õ¼ï¿½ï¿½  
                      RC_PB_BIT=0;
                    break;
          
-         case  0x01: //Í¨µÀ1±»Õ¼ÓÃ  
+         case  0x01: //Í¨ï¿½ï¿½1ï¿½ï¿½Õ¼ï¿½ï¿½  
                       RC_PB_BIT=MC1_Channel; 
        
-//                      printf("Õ¼ÓÃPORTC%x!\r\n",RC_PB_BIT);       
+//                      printf("Õ¼ï¿½ï¿½PORTC%x!\r\n",RC_PB_BIT);       
                    break;
      
-         case  0x02: //Í¨µÀ2±»Õ¼ÓÃ  
+         case  0x02: //Í¨ï¿½ï¿½2ï¿½ï¿½Õ¼ï¿½ï¿½  
                       RC_PB_BIT=MC2_Channel;
-//                      printf("Õ¼ÓÃPORTC%x!\r\n",RC_PB_BIT);        
+//                      printf("Õ¼ï¿½ï¿½PORTC%x!\r\n",RC_PB_BIT);        
                    break;    
      
-         case  0x03: //Í¨µÀ12±»Õ¼ÓÃ  
+         case  0x03: //Í¨ï¿½ï¿½12ï¿½ï¿½Õ¼ï¿½ï¿½  
                      RC_PB_BIT=MC1_Channel+MC2_Channel;
-//                      printf("Õ¼ÓÃPORTC%x!\r\n",RC_PB_BIT);    
+//                      printf("Õ¼ï¿½ï¿½PORTC%x!\r\n",RC_PB_BIT);    
                    break;    
          
-         case  0x04: //Í¨µÀ3±»Õ¼ÓÃ  
+         case  0x04: //Í¨ï¿½ï¿½3ï¿½ï¿½Õ¼ï¿½ï¿½  
                      RC_PB_BIT=MC3_Channel;
-//                      printf("Õ¼ÓÃPORTC%x!\r\n",RC_PB_BIT);    
+//                      printf("Õ¼ï¿½ï¿½PORTC%x!\r\n",RC_PB_BIT);    
                    break;             
-         case  0x05: //Í¨µÀ13±»Õ¼ÓÃ  
+         case  0x05: //Í¨ï¿½ï¿½13ï¿½ï¿½Õ¼ï¿½ï¿½  
                      RC_PB_BIT=MC1_Channel+MC3_Channel;
-//                      printf("Õ¼ÓÃPORTC%x!\r\n",RC_PB_BIT);  
+//                      printf("Õ¼ï¿½ï¿½PORTC%x!\r\n",RC_PB_BIT);  
                    break;
      
-         case  0x06: //Í¨µÀ23±»Õ¼ÓÃ  
+         case  0x06: //Í¨ï¿½ï¿½23ï¿½ï¿½Õ¼ï¿½ï¿½  
                      RC_PB_BIT=MC2_Channel+MC3_Channel;
-//                      printf("Õ¼ÓÃPORTC%x!\r\n",RC_PB_BIT);  
+//                      printf("Õ¼ï¿½ï¿½PORTC%x!\r\n",RC_PB_BIT);  
  
                    break;    
      
-         case  0x07: //Í¨µÀ123±»Õ¼ÓÃ  
+         case  0x07: //Í¨ï¿½ï¿½123ï¿½ï¿½Õ¼ï¿½ï¿½  
                      RC_PB_BIT=MC1_Channel+MC2_Channel+MC3_Channel;
-//                      printf("Õ¼ÓÃPORTC%x!\r\n",RC_PB_BIT);  
+//                      printf("Õ¼ï¿½ï¿½PORTC%x!\r\n",RC_PB_BIT);  
      
                    break;    
          
-         case  0x08: //Í¨µÀ4±»Õ¼ÓÃ 
+         case  0x08: //Í¨ï¿½ï¿½4ï¿½ï¿½Õ¼ï¿½ï¿½ 
                     RC_PB_BIT=MC4_Channel;
-//                      printf("Õ¼ÓÃPORTC%x!\r\n",RC_PB_BIT); 
+//                      printf("Õ¼ï¿½ï¿½PORTC%x!\r\n",RC_PB_BIT); 
   
                    break;            
-         case  0x09: //Í¨µÀ14±»Õ¼ÓÃ  
+         case  0x09: //Í¨ï¿½ï¿½14ï¿½ï¿½Õ¼ï¿½ï¿½  
                     RC_PB_BIT=MC1_Channel+MC4_Channel;
-//                      printf("Õ¼ÓÃPORTC%x!\r\n",RC_PB_BIT);  
+//                      printf("Õ¼ï¿½ï¿½PORTC%x!\r\n",RC_PB_BIT);  
          
                    break;
      
-         case  0x0A: //Í¨µÀ24±»Õ¼ÓÃ
+         case  0x0A: //Í¨ï¿½ï¿½24ï¿½ï¿½Õ¼ï¿½ï¿½
              RC_PB_BIT=MC2_Channel+MC4_Channel;
-//                      printf("Õ¼ÓÃPORTC%x!\r\n",RC_PB_BIT);  
+//                      printf("Õ¼ï¿½ï¿½PORTC%x!\r\n",RC_PB_BIT);  
    
                    break;    
                       
-         case  0x0B: //Í¨µÀ124±»Õ¼ÓÃ  
+         case  0x0B: //Í¨ï¿½ï¿½124ï¿½ï¿½Õ¼ï¿½ï¿½  
              RC_PB_BIT=MC1_Channel+MC2_Channel+MC4_Channel;
-//                      printf("Õ¼ÓÃPORTC%x!\r\n",RC_PB_BIT);  
+//                      printf("Õ¼ï¿½ï¿½PORTC%x!\r\n",RC_PB_BIT);  
             
                    break;    
          
-         case  0x0C: //Í¨µÀ34±»Õ¼ÓÃ  
+         case  0x0C: //Í¨ï¿½ï¿½34ï¿½ï¿½Õ¼ï¿½ï¿½  
               RC_PB_BIT=MC3_Channel+MC4_Channel;
-//                      printf("Õ¼ÓÃPORTC%x!\r\n",RC_PB_BIT);  
+//                      printf("Õ¼ï¿½ï¿½PORTC%x!\r\n",RC_PB_BIT);  
              
                    break;    
          
-         case  0x0D: //Í¨µÀ134±»Õ¼ÓÃ  
+         case  0x0D: //Í¨ï¿½ï¿½134ï¿½ï¿½Õ¼ï¿½ï¿½  
              RC_PB_BIT=MC1_Channel+MC3_Channel+MC4_Channel;
-//                      printf("Õ¼ÓÃPORTC%x!\r\n",RC_PB_BIT);  
+//                      printf("Õ¼ï¿½ï¿½PORTC%x!\r\n",RC_PB_BIT);  
 
                   break;
      
-         case  0x0E: //Í¨µÀ234±»Õ¼ÓÃ 
+         case  0x0E: //Í¨ï¿½ï¿½234ï¿½ï¿½Õ¼ï¿½ï¿½ 
              RC_PB_BIT=MC2_Channel+MC3_Channel+MC4_Channel;
-//                     printf("Õ¼ÓÃPORTC%x!\r\n",RC_PB_BIT);  
+//                     printf("Õ¼ï¿½ï¿½PORTC%x!\r\n",RC_PB_BIT);  
         
                   break;    
      
-         case  0x0F: //Í¨µÀ1234±»Õ¼ÓÃ 
+         case  0x0F: //Í¨ï¿½ï¿½1234ï¿½ï¿½Õ¼ï¿½ï¿½ 
              RC_PB_BIT=MC1_Channel+MC2_Channel+MC3_Channel+MC4_Channel;
-//                     printf("Õ¼ÓÃPORTC%x!\r\n",RC_PB_BIT); 
+//                     printf("Õ¼ï¿½ï¿½PORTC%x!\r\n",RC_PB_BIT); 
 
                  break;    
                      
         default:       
-         printf("Í¨µÀ1Õ¼ÓÃIO·¢Éú´íÎó!\r\n");
+         printf("Í¨ï¿½ï¿½1Õ¼ï¿½ï¿½IOï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½!\r\n");
          break;
           
 

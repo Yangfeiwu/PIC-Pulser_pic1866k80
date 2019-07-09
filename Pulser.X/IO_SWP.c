@@ -1,8 +1,7 @@
 /*
  * File:   IO_SWP.c
- * Author: Administrator
- *
- * Created on 2018Äê8ÔÂ7ÈÕ, ÉÏÎç10:12
+ * Author: æ¨é£žæ­¦
+ * Created on 20180808
  */
 
 
@@ -12,22 +11,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "MC_EVENT.h"
-/*--------------------------------------------ÊÇ·ñÔÊÐí¿ªÆôÂö³å------------------------------------------------*/
+/*--------------------------------------------ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½------------------------------------------------*/
 void MC1_SWP_Decision()
 {
-    if(MC1_Start_BZ==TRUE) /*Æô¶¯Âö³å1·­×ªÂð*/
+    if(MC1_Start_BZ==TRUE) /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½×ªï¿½ï¿½*/
     {
     MC1_SwapDelay--;
-          if(MC1_SwapDelay==0)/*ÑÓ³ÙÊ±¼äµ½Ö´ÐÐÒ»´ÎIO·­×ª*/
+          if(MC1_SwapDelay==0)/*ï¿½Ó³ï¿½Ê±ï¿½äµ½Ö´ï¿½ï¿½Ò»ï¿½ï¿½IOï¿½ï¿½×ª*/
          {
-               if(MC1_FZ_C>=1) /*·­×ª´ÎÊý´óÓÚ1£¬Ö´ÐÐÒ»´ÎIO·­×ª*/
+               if(MC1_FZ_C>=1) /*ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ö´ï¿½ï¿½Ò»ï¿½ï¿½IOï¿½ï¿½×ª*/
               {
-               MC1_FZ_C--; /*·­×ª´ÎÊý¼õ1*/
-               MC1_FZ_BZ=TRUE;    /*ÔÊÐíMC1_IO·­×ª1´Î*/ 
+               MC1_FZ_C--; /*ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1*/
+               MC1_FZ_BZ=TRUE;    /*ï¿½ï¿½ï¿½ï¿½MC1_IOï¿½ï¿½×ª1ï¿½ï¿½*/ 
                }
                else 
                {   
-                   MC1_Start_BZ=FALSE; //MC1·­×ª½áÊø
+                   MC1_Start_BZ=FALSE; //MC1ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
                    MC1_END_FLAT=1;
 //                  printf("81");  
                }                             
@@ -38,19 +37,19 @@ void MC1_SWP_Decision()
 
 void MC2_SWP_Decision()
 {
-    if(MC2_Start_BZ==TRUE) /*Æô¶¯Âö³å1·­×ªÂð*/
+    if(MC2_Start_BZ==TRUE) /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½×ªï¿½ï¿½*/
     {
     MC2_SwapDelay--;
-          if(MC2_SwapDelay==0)/*ÑÓ³ÙÊ±¼äµ½Ö´ÐÐÒ»´ÎIO·­×ª*/
+          if(MC2_SwapDelay==0)/*ï¿½Ó³ï¿½Ê±ï¿½äµ½Ö´ï¿½ï¿½Ò»ï¿½ï¿½IOï¿½ï¿½×ª*/
          {
-               if(MC2_FZ_C>=1) /*·­×ª´ÎÊý´óÓÚ1£¬Ö´ÐÐÒ»´ÎIO·­×ª*/
+               if(MC2_FZ_C>=1) /*ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ö´ï¿½ï¿½Ò»ï¿½ï¿½IOï¿½ï¿½×ª*/
               {
-               MC2_FZ_C--; /*·­×ª´ÎÊý¼õ1*/
-               MC2_FZ_BZ=TRUE;    /*ÔÊÐíMC1_IO·­×ª1´Î*/ 
+               MC2_FZ_C--; /*ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1*/
+               MC2_FZ_BZ=TRUE;    /*ï¿½ï¿½ï¿½ï¿½MC1_IOï¿½ï¿½×ª1ï¿½ï¿½*/ 
                }
               else 
               {
-                   MC2_Start_BZ=FALSE; //MC2·­×ª½áÊø
+                   MC2_Start_BZ=FALSE; //MC2ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
                     MC2_END_FLAT=1;
 //                   printf("82");  
               }                              
@@ -61,19 +60,19 @@ void MC2_SWP_Decision()
 
 void MC3_SWP_Decision()
 {
-    if(MC3_Start_BZ==TRUE) /*Æô¶¯Âö³å1·­×ªÂð*/
+    if(MC3_Start_BZ==TRUE) /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½×ªï¿½ï¿½*/
     {
     MC3_SwapDelay--;
-          if(MC3_SwapDelay==0)/*ÑÓ³ÙÊ±¼äµ½Ö´ÐÐÒ»´ÎIO·­×ª*/
+          if(MC3_SwapDelay==0)/*ï¿½Ó³ï¿½Ê±ï¿½äµ½Ö´ï¿½ï¿½Ò»ï¿½ï¿½IOï¿½ï¿½×ª*/
          {
-               if(MC3_FZ_C>=1) /*·­×ª´ÎÊý´óÓÚ1£¬Ö´ÐÐÒ»´ÎIO·­×ª*/
+               if(MC3_FZ_C>=1) /*ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ö´ï¿½ï¿½Ò»ï¿½ï¿½IOï¿½ï¿½×ª*/
               {
-               MC3_FZ_C--; /*·­×ª´ÎÊý¼õ1*/
-               MC3_FZ_BZ=TRUE;    /*ÔÊÐíMC1_IO·­×ª1´Î*/ 
+               MC3_FZ_C--; /*ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1*/
+               MC3_FZ_BZ=TRUE;    /*ï¿½ï¿½ï¿½ï¿½MC1_IOï¿½ï¿½×ª1ï¿½ï¿½*/ 
                }
             else 
             {
-                   MC3_Start_BZ=FALSE; //MC3·­×ª½áÊø
+                   MC3_Start_BZ=FALSE; //MC3ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
                    MC3_END_FLAT=1;
 //               printf("83");  
             }                                
@@ -84,19 +83,19 @@ void MC3_SWP_Decision()
 
 void MC4_SWP_Decision()
 {
-    if(MC4_Start_BZ==TRUE) /*Æô¶¯Âö³å1·­×ªÂð*/
+    if(MC4_Start_BZ==TRUE) /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½×ªï¿½ï¿½*/
     {
     MC4_SwapDelay--;
-          if(MC4_SwapDelay==0)/*ÑÓ³ÙÊ±¼äµ½Ö´ÐÐÒ»´ÎIO·­×ª*/
+          if(MC4_SwapDelay==0)/*ï¿½Ó³ï¿½Ê±ï¿½äµ½Ö´ï¿½ï¿½Ò»ï¿½ï¿½IOï¿½ï¿½×ª*/
          {
-               if(MC4_FZ_C>=1) /*·­×ª´ÎÊý´óÓÚ1£¬Ö´ÐÐÒ»´ÎIO·­×ª*/
+               if(MC4_FZ_C>=1) /*ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ö´ï¿½ï¿½Ò»ï¿½ï¿½IOï¿½ï¿½×ª*/
               {
-               MC4_FZ_C--; /*·­×ª´ÎÊý¼õ1*/
-               MC4_FZ_BZ=TRUE;    /*ÔÊÐíMC1_IO·­×ª1´Î*/ 
+               MC4_FZ_C--; /*ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1*/
+               MC4_FZ_BZ=TRUE;    /*ï¿½ï¿½ï¿½ï¿½MC1_IOï¿½ï¿½×ª1ï¿½ï¿½*/ 
                }
              else
              {   
-              MC4_Start_BZ=FALSE; //MC4·­×ª½áÊø
+              MC4_Start_BZ=FALSE; //MC4ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½
                MC4_END_FLAT=1;
                  //           printf("84");  
              }                               
@@ -105,53 +104,53 @@ void MC4_SWP_Decision()
      }
 }
 
-/*---------------------------------------------MC??I0·­×ª-----------------------------------------------------*/
+/*---------------------------------------------MC??I0ï¿½ï¿½×ª-----------------------------------------------------*/
 void MC1_IO_SWP()
 {
 switch (MC1_Channel)
 {
     case 0x01:
-        LATC0=!LATC0; /*MC1??IO·­×ª²Ù×÷*/
+        LATC0=!LATC0; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
         break;
      case 0x02:
-        LATC1=!LATC1; /*MC1??IO·­×ª²Ù×÷*/
+        LATC1=!LATC1; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
         break;       
 //    case 0x04:
-//        LATC2=!LATC2; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC2=!LATC2; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;
 //     case 0x08:
-//        LATC3=!LATC3; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC3=!LATC3; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;   
 //     case 0x10:
-//        LATC4=!LATC4; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC4=!LATC4; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;
 //     case 0x20:
-//        LATC5=!LATC5; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC5=!LATC5; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;       
 //    case 0x40:
-//        LATC6=!LATC6; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC6=!LATC6; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;
 //     case 0x80:
-//        LATC7=!LATC7; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC7=!LATC7; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;  
        default:
-       printf("½ûÓÃMC1Í¨µÀ!\r\n");      
+       printf("ï¿½ï¿½ï¿½ï¿½MC1Í¨ï¿½ï¿½!\r\n");      
         break;       
 }
 
 
-if(MC1_IO_STATE==1) /*µ±Ç°IO×´Ì¬Îª¸ßµçÆ½£¿*/
+if(MC1_IO_STATE==1) /*ï¿½ï¿½Ç°IO×´Ì¬Îªï¿½ßµï¿½Æ½ï¿½ï¿½*/
 {
- MC1_SwapDelay=MC1_TIME_L; /*µÍµçÆ½Ê±¼ä¸³Öµ*/
-MC1_IO_STATE=0;    /*µ±Ç°IO×´Ì¬ÖÃ0*/
-MC1_FZ_BZ=FALSE;    /*ÔÊÐí·­×ª±êÖ¾Çå¿Õ*/
+ MC1_SwapDelay=MC1_TIME_L; /*ï¿½Íµï¿½Æ½Ê±ï¿½ä¸³Öµ*/
+MC1_IO_STATE=0;    /*ï¿½ï¿½Ç°IO×´Ì¬ï¿½ï¿½0*/
+MC1_FZ_BZ=FALSE;    /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Ö¾ï¿½ï¿½ï¿½*/
 }
-else      /*µ±Ç°IO×´Ì¬ÎªµÍµçÆ½£¿*/
+else      /*ï¿½ï¿½Ç°IO×´Ì¬Îªï¿½Íµï¿½Æ½ï¿½ï¿½*/
 {
 
 MC1_SwapDelay=MC1_TIME_H;
-MC1_IO_STATE=1;    /*µ±Ç°IO×´Ì¬ÖÃ1*/
-MC1_FZ_BZ=FALSE;    /*ÔÊÐí·­×ª±êÖ¾Çå¿Õ*/
+MC1_IO_STATE=1;    /*ï¿½ï¿½Ç°IO×´Ì¬ï¿½ï¿½1*/
+MC1_FZ_BZ=FALSE;    /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Ö¾ï¿½ï¿½ï¿½*/
 
 }
 }
@@ -161,46 +160,46 @@ void MC2_IO_SWP()
 switch (MC2_Channel)
 {
 //    case 0x01:
-//        LATC0=!LATC0; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC0=!LATC0; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;
 //     case 0x02:
-//        LATC1=!LATC1; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC1=!LATC1; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;       
     case 0x04:
-        LATC2=!LATC2; /*MC1??IO·­×ª²Ù×÷*/
+        LATC2=!LATC2; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
         break;
      case 0x08:
-        LATC3=!LATC3; /*MC1??IO·­×ª²Ù×÷*/
+        LATC3=!LATC3; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
         break;   
 //     case 0x10:
-//        LATC4=!LATC4; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC4=!LATC4; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;
 //     case 0x20:
-//        LATC5=!LATC5; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC5=!LATC5; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;       
 //    case 0x40:
-//        LATC6=!LATC6; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC6=!LATC6; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;
 //     case 0x80:
-//        LATC7=!LATC7; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC7=!LATC7; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;  
        default:
-       printf("½ûÓÃMC2Í¨µÀ!\r\n");      
+       printf("ï¿½ï¿½ï¿½ï¿½MC2Í¨ï¿½ï¿½!\r\n");      
         break;       
 }
   /*RD0??1?*/
-if(MC2_IO_STATE==1) /*µ±Ç°IO×´Ì¬Îª¸ßµçÆ½£¿*/
+if(MC2_IO_STATE==1) /*ï¿½ï¿½Ç°IO×´Ì¬Îªï¿½ßµï¿½Æ½ï¿½ï¿½*/
 {
- MC2_SwapDelay=MC2_TIME_L; /*µÍµçÆ½Ê±¼ä¸³Öµ*/
-MC2_IO_STATE=0;    /*µ±Ç°IO×´Ì¬ÖÃ0*/
-MC2_FZ_BZ=FALSE;    /*ÔÊÐí·­×ª±êÖ¾Çå¿Õ*/
+ MC2_SwapDelay=MC2_TIME_L; /*ï¿½Íµï¿½Æ½Ê±ï¿½ä¸³Öµ*/
+MC2_IO_STATE=0;    /*ï¿½ï¿½Ç°IO×´Ì¬ï¿½ï¿½0*/
+MC2_FZ_BZ=FALSE;    /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Ö¾ï¿½ï¿½ï¿½*/
 }
-else      /*µ±Ç°IO×´Ì¬ÎªµÍµçÆ½£¿*/
+else      /*ï¿½ï¿½Ç°IO×´Ì¬Îªï¿½Íµï¿½Æ½ï¿½ï¿½*/
 {
 
 MC2_SwapDelay=MC2_TIME_H;
-MC2_IO_STATE=1;    /*µ±Ç°IO×´Ì¬ÖÃ1*/
-MC2_FZ_BZ=FALSE;    /*ÔÊÐí·­×ª±êÖ¾Çå¿Õ*/
+MC2_IO_STATE=1;    /*ï¿½ï¿½Ç°IO×´Ì¬ï¿½ï¿½1*/
+MC2_FZ_BZ=FALSE;    /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Ö¾ï¿½ï¿½ï¿½*/
 
 }
 
@@ -212,46 +211,46 @@ void MC3_IO_SWP()
 switch (MC3_Channel)
 {
 //    case 0x01:
-//        LATC0=!LATC0; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC0=!LATC0; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;
 //     case 0x02:
-//        LATC1=!LATC1; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC1=!LATC1; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;       
 //    case 0x04:
-//        LATC2=!LATC2; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC2=!LATC2; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;
 //     case 0x08:
-//        LATC3=!LATC3; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC3=!LATC3; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;   
      case 0x10:
-        LATC4=!LATC4; /*MC1??IO·­×ª²Ù×÷*/
+        LATC4=!LATC4; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
         break;
      case 0x20:
-        LATC5=!LATC5; /*MC1??IO·­×ª²Ù×÷*/
+        LATC5=!LATC5; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
         break;       
 //    case 0x40:
-//        LATC6=!LATC6; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC6=!LATC6; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;
 //     case 0x80:
-//        LATC7=!LATC7; /*MC1??IO·­×ª²Ù×÷*/
+//        LATC7=!LATC7; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
 //        break;  
        default:
-       printf("½ûÓÃMC3Í¨µÀ!\r\n");      
+       printf("ï¿½ï¿½ï¿½ï¿½MC3Í¨ï¿½ï¿½!\r\n");      
         break;       
 }
   /*RD0??1?*/
-if(MC3_IO_STATE==1) /*µ±Ç°IO×´Ì¬Îª¸ßµçÆ½£¿*/
+if(MC3_IO_STATE==1) /*ï¿½ï¿½Ç°IO×´Ì¬Îªï¿½ßµï¿½Æ½ï¿½ï¿½*/
 {
- MC3_SwapDelay=MC3_TIME_L; /*µÍµçÆ½Ê±¼ä¸³Öµ*/
-MC3_IO_STATE=0;    /*µ±Ç°IO×´Ì¬ÖÃ0*/
-MC3_FZ_BZ=FALSE;    /*ÔÊÐí·­×ª±êÖ¾Çå¿Õ*/
+ MC3_SwapDelay=MC3_TIME_L; /*ï¿½Íµï¿½Æ½Ê±ï¿½ä¸³Öµ*/
+MC3_IO_STATE=0;    /*ï¿½ï¿½Ç°IO×´Ì¬ï¿½ï¿½0*/
+MC3_FZ_BZ=FALSE;    /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Ö¾ï¿½ï¿½ï¿½*/
 }
-else      /*µ±Ç°IO×´Ì¬ÎªµÍµçÆ½£¿*/
+else      /*ï¿½ï¿½Ç°IO×´Ì¬Îªï¿½Íµï¿½Æ½ï¿½ï¿½*/
 {
 
 MC3_SwapDelay=MC3_TIME_H;
-MC3_IO_STATE=1;    /*µ±Ç°IO×´Ì¬ÖÃ1*/
-MC3_FZ_BZ=FALSE;    /*ÔÊÐí·­×ª±êÖ¾Çå¿Õ*/
+MC3_IO_STATE=1;    /*ï¿½ï¿½Ç°IO×´Ì¬ï¿½ï¿½1*/
+MC3_FZ_BZ=FALSE;    /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Ö¾ï¿½ï¿½ï¿½*/
 
 }
 
@@ -264,29 +263,29 @@ void MC4_IO_SWP()
 switch (MC4_Channel)
 {     
     case 0x40:
-        LATC6=!LATC6; /*MC1??IO·­×ª²Ù×÷*/
+        LATC6=!LATC6; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
         break;
      case 0x80:
-        LATC7=!LATC7; /*MC1??IO·­×ª²Ù×÷*/
+        LATC7=!LATC7; /*MC1??IOï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½*/
         break;  
        default:
-       printf("½ûÓÃMC4Í¨µÀ!\r\n");      
+       printf("ï¿½ï¿½ï¿½ï¿½MC4Í¨ï¿½ï¿½!\r\n");      
         break;       
 }
   /*RD0??1?*/
-if(MC4_IO_STATE==1) /*µ±Ç°IO×´Ì¬Îª¸ßµçÆ½£¿*/
+if(MC4_IO_STATE==1) /*ï¿½ï¿½Ç°IO×´Ì¬Îªï¿½ßµï¿½Æ½ï¿½ï¿½*/
 {
- MC4_SwapDelay=MC4_TIME_L; /*µÍµçÆ½Ê±¼ä¸³Öµ*/
-MC4_IO_STATE=0;    /*µ±Ç°IO×´Ì¬ÖÃ0*/
-MC4_FZ_BZ=FALSE;    /*ÔÊÐí·­×ª±êÖ¾Çå¿Õ*/
+ MC4_SwapDelay=MC4_TIME_L; /*ï¿½Íµï¿½Æ½Ê±ï¿½ä¸³Öµ*/
+MC4_IO_STATE=0;    /*ï¿½ï¿½Ç°IO×´Ì¬ï¿½ï¿½0*/
+MC4_FZ_BZ=FALSE;    /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Ö¾ï¿½ï¿½ï¿½*/
 
 }
-else      /*µ±Ç°IO×´Ì¬ÎªµÍµçÆ½£¿*/
+else      /*ï¿½ï¿½Ç°IO×´Ì¬Îªï¿½Íµï¿½Æ½ï¿½ï¿½*/
 {
 
  MC4_SwapDelay=MC4_TIME_H;
-MC4_IO_STATE=1;    /*µ±Ç°IO×´Ì¬ÖÃ1*/
-MC4_FZ_BZ=FALSE;    /*ÔÊÐí·­×ª±êÖ¾Çå¿Õ*/   
+MC4_IO_STATE=1;    /*ï¿½ï¿½Ç°IO×´Ì¬ï¿½ï¿½1*/
+MC4_FZ_BZ=FALSE;    /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Ö¾ï¿½ï¿½ï¿½*/   
 
 }
 
