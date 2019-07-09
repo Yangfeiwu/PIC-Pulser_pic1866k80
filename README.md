@@ -1,7 +1,7 @@
 # PIC-Pulser_pic1866k80
 基于PIC18F66K80多路可控脉冲输出，及IO控制的下位机程序
 # PIC18f66k80下位机程序目录结构
-##头文件：
+## 头文件：
 * Config.h
 * IO_Int.h
 * IO_SWP.h
@@ -13,7 +13,7 @@
 * Register.h
 * Pulser_param.h
 
-##源文件
+## 源文件
 * main.c
 * IO_INT.c
 * IO_SWP.c
@@ -24,7 +24,7 @@
 * USART1.c
 
 
-#功能说明：
+# 功能说明：
 * PORTC可做脉冲输出通道，在脉冲工作期间会失去对MC占用IO的控制(脉冲结束后释放控制权)
 
 # Labview上位机展示
@@ -33,6 +33,11 @@
 
 ![mahua](https://github.com/Yangfeiwu/PIC-Pulser_pic1866k80/blob/master/img/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE.png)
 
+# 有问题反馈
+在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流
+
+* 邮件：898109004@qq.com
+* QQ: 898109004
 
 
 
